@@ -2,6 +2,7 @@
 
 const { defineConfig, devices } = require('@playwright/test');
 require('dotenv').config({ override: true });
+reporter: 'html'
 module.exports = defineConfig({
 
     testDir: './tests',
